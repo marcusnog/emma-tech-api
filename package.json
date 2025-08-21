@@ -1,0 +1,27 @@
+{
+  "name": "nova-pasta-(3)",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "ts-node src/infra/webserver/server.ts",
+    "build": "tsc",
+    "start": "node dist/infra/webserver/server.js",
+    "dev:docker": "./node_modules/.bin/ts-node-dev --respawn --transpile-only src/infra/webserver/server.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "description": "",
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.3",
+    "@types/mongoose": "^5.11.96",
+    "@types/node": "^24.3.0",
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.9.2"
+  }
+}
