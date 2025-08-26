@@ -6,12 +6,12 @@ const options: swaggerJsdoc.Options = {
   definition: {
     openapi: "3.0.0",
     info: {
-      title: "Minha API",
+      title: "Emma-tech-API",
       version: "1.0.0",
       description: "Documentação da API com Swagger",
     },
   },
-  apis: ["./src/infra/webserver/routes/*.ts"], // caminhos para os arquivos com @openapi
+  apis: ["./src/infra/webserver/routes/*.ts"],
 };
 
 const swaggerSpec = swaggerJsdoc(options);
